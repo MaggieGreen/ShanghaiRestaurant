@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Little Shanghai Restaurant</title>
+</head>
+
+<body>
+    <div id="main-navbar">
+        <div class="main-nav small">
+            <div class="nav-top">
+                <div>
+                    <a href="index.html">
+                    <figure>
+                        <img src="img/whitelogo.png" class="white-logo"
+                            id="logo1" alt="littleshanghairestaurant-w">
+                        <img src="img/logore_1.png" class="white-logo" id="logo2" alt="littleshanghairestaurant-w1">
+                    </figure>
+                    </a>
+                </div>
+                <div class="responsive-button">
+                    
+                </div>
+            </div>
+            <div class="nav-link">
+                <a href="index.html" class="active">Home</a>
+                <a href="about.html">About</a>
+                <a href="menu.html">Menu</a>
+                <a href="reservation.html">Reservations</a>
+                <a href="events.html">Events</a>
+                <a href="contact.html">Contact</a>
+                <div class="nav-item-icon">
+                    <a>
+                        <i>
+                            <img src="img/search.png" alt="search">
+                        </i>
+                    </a>
+                    <a>
+                        <i>
+                            <img src="img/eng.png" alt="eng">
+                        </i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <img src="img/banner_sh.jpg" alt="banner_sh">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="img/banner_1.jpg" alt="banner_1">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="img/banner_2.jpg" alt="banner_2">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="img/banner_3.jpg" alt="banner_3">
+        </div>
+
+        <div class="text">
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-container">
+        <div class="part_2">
+            <div class="intro_pic">
+                <img src="img/intro_1.jpg" alt="Intro_pic">
+            </div>
+            <div class="intro">
+                <div class="intro_in">
+                    <h2>Little Shanghai<br />Restaurant</h2>
+                    <p>At San Mateo’s Little Shanghai Restaurant’s, you will find a wide variety of traditional Chinese
+                        cuisine, including sweet and sour chicken and fried rice. Whether you are looking for food low
+                        in fat or gluten-free, this restaurant is the place you want to eat…</p>
+                    <a href="about.html" target="_blank">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="reservation-wrapper">
+            <div class="home_reservation">
+                <!-- <img src="img/homere.jpg" alt="home_reservation"> -->
+                <div class="title">
+                    <h2>Opening Times</h2>
+                    <p>Tue-Sun: 11:00 am - 3:00 pm</p>
+                    <p>5:00 pm - 9:30 pm</p>
+                    <p>Mon: closed</p>
+                    <a href="reservation.html" target="_blank">
+                        Reservation
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="footer">
+        <div class="footer-item">
+            <span>
+                Follow us
+
+            </span>
+            <a href="#">
+                <i class="fa fa-facebook"></i>
+            </a>
+            <a href="#">
+                <i class="fa fa-twitter"></i>
+            </a>
+            <a href="#">
+                <i class="fa fa-youtube"></i>
+            </a>
+            <a href="#">
+                <i class="fa fa-instagram"></i>
+            </a>
+            <a href="#">
+                <i class="fa fa-pinterest"></i>
+            </a>
+            <span>
+                #LittleShanghaiRestaurant
+
+            </span>
+        </div>
+    </div>
+    <script>
+        let viewWidth = window.screen.height;
+        
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 3000); // Change image every 2 seconds
+        }
+
+    </script>
+    <script src="https://cdn.bootcss.com/jquery/3.4.0/jquery.min.js"></script>
+    <script src="javascript.js"></script>
+    <script src="navjavascript.js"></script>
+</body>
+
+</html>

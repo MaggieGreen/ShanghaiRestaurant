@@ -1,0 +1,1128 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+/* Transitions */
+figure {
+    width: 200px;
+    padding: 10%;   
+}
+.responsive-button {
+    display: none;
+}
+
+.main-nav {
+    background-color: rgba(54, 71, 87, 1);
+    overflow: hidden;
+    width: 100%; /* Full width */
+    font-family: "Mrs Eaves";
+    font-variant: small-caps;
+    font-size:18pt; 
+    /* position: fixed; */
+    top: 0;
+    z-index: 1071;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.8s;
+
+}
+
+
+.nav-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-nav.smaller {
+    background-color: rgba(54, 71, 87, 0.7);
+    overflow: hidden;
+    width: 100%; /* Full width */
+    font-family: "Mrs Eaves";
+    font-variant: small-caps;
+    font-size:18pt; 
+    position: fixed;
+    top: 0;
+    z-index: 1071;
+}
+#logo2 {
+    transition: all 0.3s;
+    display: none;
+}
+.main-nav.smaller #logo1 {
+    transition: all 0.3s;
+    display: none;
+}
+.main-nav.smaller #logo2 {
+    transition: all 0.3s;
+    display: block;
+}
+.main-nav a {
+    padding: 5px 5px;
+    float: left;
+    color: #d1b56c;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+}
+.nav-link {
+    width: 70vw;
+    display: flex;
+    /* float: right; */
+    justify-content: space-around;
+    /* transition: all 0.8s; */
+    
+}
+.nav-link a {
+    /* padding: 70px 30px; */
+    transition: all 0.3s;
+}
+.main-nav.smaller .nav-link a {
+    transition: all 0.3s;
+}
+.nav-link a:hover {
+    text-decoration-line: underline;
+}
+
+.main-nav a.active {
+    color: white;
+    text-decoration-line: underline;
+    text-decoration-color: #d1b56c;
+    background: none;
+}
+
+
+/* space */
+.none {
+    height: 220px;
+}
+.none_2 {
+    height: 40px;
+}
+.none_3 {
+    height: 195px;
+}
+.none_4 {
+    height: 220px;
+}
+
+/* end of other page navbar */
+
+.pull-left {
+    float: left !important;
+}
+.part_2{
+
+    width: 85.5%;
+    margin: auto;
+    /*background-color: red;*/
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    align-items: center;
+    /*height: 751px;*/
+    /* position: relative; */
+}
+
+
+
+.intro {
+    width: 57%;
+    /*float: right;
+    top: 50%;*/
+    text-align: left;
+    /*text-align: center;
+    position: relative;*/
+}
+
+.intro_2 {
+    padding-top: 5%;
+    margin: 2%;
+    width: 60%;
+    height: 50%;
+    float: right;
+    text-align: left;
+    position: relative;
+}
+
+.intro_3 {
+    padding-left: 5%;
+    margin: 2%;
+    width: 50%;
+    height: 50%;
+    float: right;
+    text-align: left;
+    position: relative;
+}
+
+
+
+.intro_in {
+    /*transform: translateY(-50%);
+    top: 50%;
+    position: absolute;
+    background-color: pink;*/
+    width: 100%;
+    /* margin: 100px auto 0; */
+    /*margin: 0 10%;*/
+}
+
+.intro_in p {
+    display: block;
+    width: 100%;
+    padding: 3%;
+}
+
+.intro a:link {
+    color: white;
+}
+.intro_pic {
+    /* flex: 1 1 auto; */
+    /* width: 80%; */
+    margin: 10px 10px 45px;
+}
+
+.intro_pic_2{
+    flex: 0 0 30%; 
+    width: 50%;
+    padding: 2%;
+}
+
+.intro_pic_3{
+    flex: 0 0 40%; 
+    width: 50%;
+    padding: 2%;
+    margin-bottom: 190px;
+}
+
+.intro_pic img {
+    width: auto;
+    max-width: 100%;
+    /* height: 500px; */
+}
+
+p {
+    font-family: "Mrs Eaves OT";
+    color:#3c3a3b;
+    font-size:16pt;
+}
+/* special hover and word */
+.home_reservation {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 85.5%;
+    height: 500px;
+    background: url("img/homere.jpg");
+    background-size: cover
+}
+
+.reservation-wrapper {
+    margin: 30px 0; 
+}
+
+.home_reservation p {
+    color:white;
+}
+.home_reservation h2 {
+    color:white;
+}
+.menu p {
+    color:white;
+}
+
+.menu a:link{
+    color:white;
+    font-family: "Mrs Eaves OT";
+    font-variant: small-caps;
+    font-size:30pt;     
+}
+
+h2 {
+    font-family: "Mrs Eaves OT";
+    font-variant: small-caps;
+    color:#3c3a3b;
+    font-size:30pt;  
+}
+
+.title {
+    text-align: center;
+    padding: 10px;
+    color:white;
+    font-family: "Mrs Eaves OT";
+    font-variant: small-caps;
+    font-size: 20pt;
+    transition: all .5s ease-in;
+}
+.title:hover {
+    background-color: #364757;
+}
+.title a {
+    color: white;
+}
+.title p {
+    padding: 3%;
+}
+.intro a{
+    color: white;
+    font-family: "Mrs Eaves OT";
+    font-variant: small-caps;
+    font-size: 20pt;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-image: url(img/menubg.jpg);
+    color: #979797;
+    text-align: center;
+    height: 100px;
+    /*background-color: green;*/
+}
+
+.footer-item {
+    display: flex;
+    width: 80vw;
+    align-items: center;
+    justify-content: space-between
+}
+
+.footer a {
+    /* margin-left: 12px; */
+    /* margin-right: 12px; */
+    text-decoration: none;
+}
+
+.fa {
+    padding-top: 7px;
+    font-size: 16px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #979797;
+    color: white;
+}
+
+.fa-twitter {
+    background: #979797;
+    color: white;
+}
+.fa-youtube {
+    background: #979797;
+    color: white;
+}
+
+.fa-instagram {
+    background: #979797;
+    color: white;
+}
+
+.fa-pinterest {
+    background: #979797;
+    color: white;
+}
+
+/* Slideshow */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+    /* width: 100%; */
+    /* height: 90vh; */
+    position: relative;
+    margin: auto;
+    z-index: -1;
+}
+
+.slideshow-container img{
+    width: 100%;
+    height: 80vh;
+}
+/* Slideshow container other */
+.slideshow-container {
+    position: relative;
+    margin: auto;
+    z-index: -1;
+}
+
+
+
+/* other page navbar Slideshow */
+/* Slideshow */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container_none {
+    position: relative;
+    margin: auto;
+    z-index: -1;
+    display: none;
+}
+
+/* end of other page navbar Slideshow */
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+/* End of Slideshow */
+
+/* content-container */
+.content-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin:  0 0 10px 0;
+    /*background-color: red;*/
+    /*height: 91vh;*/
+}
+
+.content-container a:link {
+    background-color: #d1b56c;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+.content-container a:hover {
+    background-color: #3c3a3b;
+}
+/* End of content-container */
+
+/* reservation content-container */
+/* .reservation {
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 150px;
+} */
+
+/* .reservation img {
+    width: 100%;
+} */
+.main-navbar {
+    transition: all 0.8s;
+}
+.muenu-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* menu page content-container */
+
+.menu {
+    text-align: center;
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.menu-tiele {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu
+img {
+    opacity: 0.6;
+}
+.title_2 {
+    position: absolute;
+    color:white;
+    font-family: "Mrs Eaves OT";
+    font-variant: small-caps;
+    font-size: 20pt;
+    transition: all .5s ease-in;
+}
+
+.title_2 a {
+    color: white;
+}
+
+.title_2 a:link {
+    background-color:rgba(203, 176, 107, 0.6) ;
+}
+
+
+/* reservation page content-container */
+.title_3 {
+    color: white;
+    position: absolute;
+    font-family: "Mrs Eaves OT";
+    font-variant: small-caps;
+    font-size: 20pt;
+    /* width: 100%; */
+}
+
+/* reservation form */
+.custom-select {
+    display: inline-block;  
+    padding-top: 2%;
+}
+
+select {
+    display: inline-block;
+    height: 50px;
+    /* padding: 40px; */
+    background-color: #d1b56c;
+    border-radius: 8px;
+    border: 1px solid #3c3a3b;
+    width: 250px;
+    font-family: "Mrs Eaves OT";
+    font-size: 24px;
+}
+
+button {
+    background-color: #d1b56c;
+    padding: 1%;
+    border: 2px solid #3c3a3b;
+    width: 250px;
+
+    font-family: "Mrs Eaves OT";
+    font-size: 24px;
+}
+
+
+/* events */
+* {box-sizing: border-box;}
+.picture_1 {
+    display: flex;
+    margin: 0;
+    padding-left: 2%;
+}
+
+.event {
+    position: relative;
+}
+
+.event .image {
+    display: block;
+    /* width: 100%; */
+    height: auto;
+}
+
+.caption {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.event:hover .caption {
+    opacity: 1;
+}
+
+
+
+
+.map-container {
+    height: 1000px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.map-container
+    h2 {
+        margin-bottom: 20px;
+    }
+    /* Always set the map height explicitly to define the size of the div
+    * element that contains the map. */
+    #map {
+        height: 800px;
+        width: 85.5vw;
+        margin: 10px  auto;
+        /* margin-left: 30px; */
+    }
+
+.map-text {
+    margin: 20px;
+}
+
+.menu_all {
+    margin: 50px 0;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+}
+
+.menu_all 
+a {
+    text-decoration: none;
+}
+
+.menu_dinner,
+.menu_lunch,
+.menu_special {
+    background-image: url(img/dinner_menu.jpg);
+    width: 600px;
+    height: 850px;
+    /*left: 13%;
+    position: relative;*/
+    /*padding-bottom: 5%;*/
+    background-size: cover;
+    margin: 0 auto 150px;
+}
+
+
+
+.title_menu {
+    text-align: center;
+    width: 50%;
+    color:white;
+    position: relative;
+    padding: 2%;
+    margin: 2%;
+    transform: translate(50%, -12%);
+    font-family: "Mrs Eaves OT";
+    font-variant: small-caps;
+    font-size: 20pt;
+    transition: all .5s ease-in;
+    border:2px solid #b92607;
+}
+
+.title_menu:hover {
+    background-color: #d1b56c;
+}
+.title_menu a {
+    color: white;
+}
+.title_menu p {
+    padding: 3%;
+}
+
+ul.breadcrumb {
+    position: relative;
+    padding: 10px 16px;
+    list-style: none;
+    font-family: "Mrs Eaves OT";
+    font-size: 10pt;
+}
+ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+}
+
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+ul.breadcrumb li a {
+    color: white;
+    text-decoration: underline;
+}
+ul.breadcrumb li a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+.the-icon {
+    transform: rotate(45deg);
+  }
+  
+
+.responsive-button {
+    margin:0 20px;
+    font-family: 'icomoon';
+    speak: none;
+    font-size: 20px;
+   font-style: normal;
+   font-weight: normal;
+   font-variant: normal;
+   text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: all  0.4s;
+  }
+
+  .reservation
+  img {
+    width: 100%;
+    height: 600px;
+  }
+
+  .reservation {
+      /* margin: 200px 0 20px 0; */
+      justify-content: center;
+      align-items: flex-end;
+      /* margin-top: 140px; */
+      
+  }
+
+
+  .event-text {
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0 0 0;
+  }
+  .event-text
+  .butonn{
+      display: block;
+      width: 400px;
+      padding: 20px;
+      background: #d1b56c;
+      text-align: center;
+      border-radius: 5px;
+  }
+  .event-text
+  .intro_4{
+    width: 50vw;
+    /* height: 250px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 0 20px 0;
+  }
+
+
+  .pictures_event {
+    justify-content: center;
+    align-items: center;
+      width: 950px;
+      display: flex;
+    flex-wrap: wrap;
+    margin:  0 0 40px 0;
+  }
+
+@media (max-width: 1024px) {
+    .slideshow-container img{
+        width: 100%;
+        height: auto;
+    }
+    .muenu-page{
+        justify-content: space-between;
+    }
+    .nav-top{
+        
+        width: 100vw;
+    }
+    .nav-link {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        opacity: 0;
+    }
+    .responsive-button {
+        display: inline;
+        color: #f1f1f1;
+    }
+    
+    .main-nav{
+        flex-wrap: wrap;
+        
+    }
+
+    .intro_pic img {
+        /* height: auto; */
+    }
+    .intro{
+        width: 100%;
+    }
+    .part_2 {
+        flex-direction: column;
+
+    }
+    .home_reservation {
+        height: 35vh
+    }
+    .title {
+        /* height: 100%; */
+    }
+    .footer-item
+    span {
+        font-size: 0.2em;
+    }
+    .footer-item{
+        width: 60vw;
+    }
+
+    /* about */
+    .tuchu {
+        order: -1;
+    }
+
+    /* menu */
+
+    .menu-tiele {
+        flex-direction: row;
+    }
+
+    .menu_all {
+        flex-wrap: wrap;
+        margin: 0;
+    }
+    .menu {
+        width: 80vw;
+        border-radius: 5px;
+        margin: 5px 0;
+    }
+    .menu_all
+    img {
+        display: none
+    }
+    .menu1 {
+        background-color: #d1b56c;
+    }
+    .menu2 {
+        background-color: #443d49
+    }
+    .menu3 {
+        background-color: #717171;
+    }
+
+
+
+
+    /* seservation */
+
+    .title_3 {
+        position: static;
+        width: 100%;
+    }
+
+    .reservation {
+        justify-content: space-between;
+        margin: 0;
+    }
+    .custom-select {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 10px 0;
+    }
+    .custom-select
+    select {
+        width: 80vw;
+        margin: 10px 0;
+    }
+    .event-text
+    .butonn {
+        width: 200px;
+    }
+
+    /* event */
+    .event-text
+    .intro_4{
+        width: 80vw;
+        /* height: 30vh; */
+        /* font-size: 0.2em; */
+    }
+    .pictures_event {
+        flex-direction: column;
+        width: 100%;
+    }
+
+.event
+img {
+    width: 80vw;
+    margin: 10px 0;
+}
+
+}
+
+
+
+
+/* min with 375px */
+@media (max-width: 812px) {
+ #map {
+     height:600px; 
+ }
+    .reservation
+  img{
+      height: auto;
+  }
+    .nav-top{
+        width: 100vw;
+    }
+    .nav-link {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        opacity: 0;
+    }
+    .responsive-button {
+        display: inline;
+        color: #f1f1f1;
+    }
+    
+    .main-nav{
+        flex-wrap: wrap;
+    }
+
+    .intro_pic img {
+        /* height: auto; */
+    }
+    .intro{
+        width: 100%;
+    }
+    .part_2 {
+        flex-direction: column;
+
+    }
+    .home_reservation {
+        height: 35vh
+    }
+    .title {
+        /* height: 100%; */
+    }
+    .footer-item
+    span {
+        font-size: 0.2em;
+    }
+.footer-item{
+    /* width: 100%; */
+}
+
+    /* about */
+    .tuchu {
+        order: -1;
+    }
+
+    /* menu */
+
+    .menu-tiele {
+        flex-direction: row;
+    }
+
+    .menu_all {
+        flex-wrap: wrap
+    }
+    .menu {
+        width: 80vw;
+        border-radius: 5px;
+        margin: 5px 0;
+    }
+    .menu_all
+    img {
+        display: none
+    }
+    .menu1 {
+        background-color: #d1b56c;
+    }
+    .menu2 {
+        background-color: #443d49
+    }
+    .menu3 {
+        background-color: #717171;
+    }
+
+
+
+
+    /* seservation */
+
+    .title_3 {
+        position: static;
+        width: 100%;
+    }
+
+    .reservation {
+        justify-content: space-between;
+        margin: 0;
+        margin: 0 0 0 0;
+    }
+    .custom-select {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 10px 0;
+    }
+    .custom-select
+    select {
+        width: 80vw;
+        margin: 10px 0;
+    }
+    .event-text
+    .butonn {
+        width: 200px;
+    }
+
+    /* event */
+    .event-text
+    .intro_4{
+        width: 80vw;
+        height: 30vh;
+        /* font-size: 0.2em; */
+    }
+    .pictures_event {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .event
+    img {
+        width: 80vw;
+        margin: 10px 0;
+    }
+
+    .menu_all{
+        margin:  0 0 0 0;
+    }
+    }
+
+
+
+@media (max-width: 375px) {
+    .event-text
+    .intro_4{
+        width: 80vw;
+        height: 50vh;
+        /* font-size: 0.2em; */
+    }
+    .intro_pic img {
+        height: auto;
+    }
+    
+}
+@keyframes listShow{
+    0% {
+        opacity: 0
+    }
+    
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+@font-face {
+    font-family: "icomoon";
+    src:  url('./fonts/icomoon.eot?nhzfsp');
+    src:  url('./fonts/icomoon.eot?nhzfsp#iefix') format('embedded-opentype'),
+      url('./fonts/icomoon.ttf?nhzfsp') format('truetype'),
+      url('./fonts/icomoon.woff?nhzfsp') format('woff'),
+      url('./fonts/icomoon.svg?nhzfsp#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
